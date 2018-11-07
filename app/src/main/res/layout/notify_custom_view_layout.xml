@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notify_download_iv"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginTop="12dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notify_tv"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/notify_download_iv"
+        android:text="正在下载..."/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notify_progress_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_below="@+id/notify_tv"
+        android:layout_toRightOf="@+id/notify_download_iv"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:id="@+id/notify_progress_instruction_tv"
+        android:layout_below="@+id/notify_progress_pb"
+        android:text="客户端已经下载了"
+        android:layout_toRightOf="@+id/notify_download_iv"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:id="@+id/notify_progress_tv"
+        android:layout_toRightOf="@+id/notify_progress_instruction_tv"
+        android:layout_below="@+id/notify_progress_pb"
+        android:text="50%"
+        />
+
+</RelativeLayout>
