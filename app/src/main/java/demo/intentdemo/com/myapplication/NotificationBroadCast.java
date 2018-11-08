@@ -18,6 +18,14 @@ import static android.content.Context.NOTIFICATION_SERVICE;
 
 
 public class NotificationBroadCast extends BroadcastReceiver {
+
+    /**
+     *
+     *  这个是手动点击通知栏弹出更新的逻辑
+     *
+     *
+     * */
+
     private File downFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/industry.apk");
     private static final String INSTALL_ACTION = "demo.intentdemo.com.myapplication";
 

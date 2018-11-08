@@ -58,6 +58,7 @@ public class NotificationUtils extends ContextWrapper {
     @RequiresApi(api = Build.VERSION_CODES.O)
     public Notification.Builder getAndroidChannelNotification(String title, String content) {
         return new Notification.Builder(getApplicationContext(), ANDROID_CHANNEL_ID)
+                .setTicker("new version新版本new version新版本new version新版本new version新版本new version新版本")
                 .setContentTitle(title)
                 .setContentText(content)
                 .setSmallIcon(android.R.drawable.stat_notify_more)
@@ -65,6 +66,7 @@ public class NotificationUtils extends ContextWrapper {
     }
     public NotificationCompat.Builder getNotification_25(String title, String content){
         return new NotificationCompat.Builder(getApplicationContext())
+                .setTicker("new version新版本new version新版本new version新版本new version新版本new version新版本")
                 .setContentTitle(title)
                 .setContentText(content)
                 .setSmallIcon(android.R.drawable.stat_notify_more)

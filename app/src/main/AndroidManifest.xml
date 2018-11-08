@@ -29,7 +29,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="demo.intentdemo.com.myapplication"
+            android:authorities="demo.intentdemo.com.myapplication.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

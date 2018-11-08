@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void haha(View view){
         Intent intent = new Intent(MainActivity.this,UpdateService.class);
-        intent.putExtra("apkurl", "https://15bd1b599f7a3e950097ff61106922db.dd.cdntips.com/imtt.dd.qq.com/16891/D4109853CA50D9FA7C3AAF99DD2C16AB.apk?mkey=5be2987b7ccf5cef&f=24c3&fsname=com.snda.wifilocating_4.3.15_181031.apk&csr=1bbd&cip=124.207.122.26&proto=https");
+        intent.putExtra("apkurl", "https://7b167e115c7ee4e8a3196b952823615c.dd.cdntips.com/imtt.dd.qq.com/16891/008C065B97FEF232D2FC7DC48627F1AC.apk?mkey=5be3cf907ccf5cef&f=0c99&fsname=com.glove.compass_1.0_25.apk&csr=1bbd");
         startService(intent);
     }
 
