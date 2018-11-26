@@ -174,7 +174,8 @@ public class UpdateService extends IntentService {
         Intent intent = new Intent();
         intent.setAction("android.intent.action.VIEW");
         intent.addCategory("android.intent.category.DEFAULT");
-        if (Build.VERSION.SDK_INT>Build.VERSION_CODES.N){
+        //记得是大于等于！！！！
+        if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.N){
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_GRANT_READ_URI_PERMISSION);//广播里面操作需要加上这句，存在于一个独立的栈里
             Uri contentUri = FileProvider.getUriForFile(this, getPackageName() + ".fileprovider", filePath);
             intent.setDataAndType(contentUri, "application/vnd.android.package-archive");
